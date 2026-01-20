@@ -1,7 +1,7 @@
 services:
   postgres:
     image: postgres:17.6-alpine
-    container_name: tts_dataset_db
+    container_name: dataset_db
     env_file:
       - .env
     ports:
