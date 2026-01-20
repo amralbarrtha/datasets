@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "dotenv -e .env -- next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "dotenv -e .env -- next start",
     "lint": "eslint",
     "export": "npx tsx src/scripts/export.ts",
     "import": "npx tsx src/scripts/import.ts"
