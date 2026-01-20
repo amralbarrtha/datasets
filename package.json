@@ -8,7 +8,12 @@
     "start": "dotenv -e .env -- next start",
     "lint": "eslint",
     "export": "npx tsx src/scripts/export.ts",
-    "import": "npx tsx src/scripts/import.ts"
+    "import": "npx tsx src/scripts/import.ts",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "npx tsx src/db/seed.ts"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^1.11.1",
